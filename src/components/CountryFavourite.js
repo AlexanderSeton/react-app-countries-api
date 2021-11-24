@@ -2,9 +2,9 @@ import React from "react";
 import TableItem from './TableItem.js';
 import "./static/CountryTable.css"
 
-const CountryList = ({countries, onCountryClick, onFavouriteClick}) => {
+const CountryFavourite = ({favourites, onCountryClick, onFavouriteClick}) => {
 
-    const CountriesItems = countries.map((country, index) => {
+    const CountriesItems = favourites.map((country, index) => {
         return <TableItem country={country} onCountryClick={onCountryClick} onFavouriteClick={onFavouriteClick} id={index} />
         console.log(CountriesItems);
     });
@@ -28,4 +28,4 @@ const CountryList = ({countries, onCountryClick, onFavouriteClick}) => {
     );
 };
 
-export default CountryList;
+export default CountryFavourite;

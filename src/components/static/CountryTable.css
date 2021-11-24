@@ -1,7 +1,9 @@
 .table {
-    border: 1px black solid;
+    /* border: 1px black solid; */
+    width: 100%;
 }
 
-th, td, tr {
+table, th, td, tr {
     border: 1px black solid;
+    margin: 1%;
 }
