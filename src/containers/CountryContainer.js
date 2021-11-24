@@ -23,7 +23,9 @@ const CountryContainer = () => {
 
     const onFavouriteClick = function(country) {
         console.log("changed favourite countries:", country);
-        favouriteCountries.push(country);
+        let newArray = [...favouriteCountries, country];
+        setFavouriteCountries(newArray);
+        console.log("favourite countries:", favouriteCountries);
     };
 
     const onCountryClick = function(country) {
